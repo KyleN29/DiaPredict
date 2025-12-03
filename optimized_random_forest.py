@@ -18,15 +18,15 @@ Results:
 Using n_estimators=200
 
 
-Test Precision: 0.31353994665311824
-Test Recall: 0.6984014712123355
-Test F1: 0.43278544817006354
-Test PR AUC: 0.3593693375944958
+Test Precision: 0.28295124864895616
+Test Recall: 0.7036355920215024
+Test F1: 0.4036027263875365
+Test PR AUC: 0.3033221174653773
 Test Confusion Matrix:
             Predicted
              No      Yes
-Actual  No [[32858 10809]
-        Yes [ 2132  4937]]
+Actual  No [[31062 12605]
+        Yes [ 2095  4974]]
 
 These numbers honestly don't look great,
 but they are pretty decent given the data
@@ -44,6 +44,9 @@ cdc = fetch_ucirepo(id=891)
 
 X = cdc.data.features
 y = cdc.data.targets
+
+bad_features = ["AnyHealthcare", "NoDocbcCost", "Education", "Income"]
+X = X.drop(columns=bad_features)
 
 print("Dataset loaded.")
 print("Shape:", X.shape)
