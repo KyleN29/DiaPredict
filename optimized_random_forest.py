@@ -9,7 +9,7 @@ what gives the best F1 Score in the validation set.
 The threshold is just the cutoff for determining a No or Yes prediction
 given the models prediction between 0-1.
 
-This threshold could be reduced afterwords to
+This threshold is reduced afterwords to
 optimize recall at the cost
 of F1 Score, since false negatives are very
 bad.
@@ -83,7 +83,7 @@ print("Chosen threshold from validation:", best_t)
 print("Best validation F1:", best_f1)
 
 y_test_prob = model.predict_proba(X_test)[:, 1]
-y_test_pred = (y_test_prob >= best_t).astype(int)
+y_test_pred = (y_test_prob >= (best_t * .8)).astype(int)
 
 print("Test Precision:", precision_score(y_test, y_test_pred))
 print("Test Recall:", recall_score(y_test, y_test_pred))
