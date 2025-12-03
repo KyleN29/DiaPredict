@@ -18,15 +18,15 @@ Results:
 Using n_estimators=200
 
 
-Test Precision: 0.3405899984224641
-Test Recall: 0.610836044702221
-Test F1: 0.43733225300045575
+Test Precision: 0.31353994665311824
+Test Recall: 0.6984014712123355
+Test F1: 0.43278544817006354
 Test PR AUC: 0.3593693375944958
 Test Confusion Matrix:
-               Predicted
+            Predicted
              No      Yes
-Actual  No  [[35307  8360]
-        Yes [ 2751  4318]]
+Actual  No [[32858 10809]
+        Yes [ 2132  4937]]
 
 These numbers honestly don't look great,
 but they are pretty decent given the data
