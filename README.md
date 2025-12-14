@@ -1,32 +1,31 @@
 # Data Sources
 
-Our data comes entirely from different subsets of the CDC's National Health and Nutrition Examination Survy (NHANES).
+Our data comes entirely from different subsets of the CDC's National Health and Nutrition Examination Survey (NHANES).
+To run our model successfully, the file paths and names of the datasets inside of the `data` folder must be properly updated.
+A google drive folder containing all relevant data in the correct configuration can be found [here](https://drive.google.com/drive/folders/1aH5_MltxgZlqqVENs3FR19ifpsSzk_pv?usp=sharing).
+Alternatively, hyperlinks leading to each distinct dataset used in our project are listed below.
 
 ## NHANES Demographics
 
-- [2011-12](https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&Cycle=2011-2012)
-- [2013-14](https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&Cycle=2013-2014)
+- [2011-12](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DEMO_G.xpt)
+- [2013-14](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DEMO_H.xpt)
 
-## NHANES Examination Data
+## NHANES Examination Data (Body Measures)
 
-- [2011-12](https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&Cycle=2011-2012)
-- [2013-14](https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&Cycle=2013-2014)
-  - Body Measures
+- [2011-12](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.xpt)
+- [2013-14](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BMX_H.xpt)
 
-## NHANES Questionnaire Data
+## NHANES Questionnaire Data (Blood Pressure & Cholesterol)
 
-- [2011-12](https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&Cycle=2011-2012)
-- [2013-14](https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&Cycle=2013-2014)
-  - Blood Pressure & Cholesterol
+- [2011-12](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BPQ_G.xpt)
+- [2013-14](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BPQ_H.xpt)
 
-## NHANES Laboratory Data
+## NHANES Laboratory Data (Glycohemoglobin - Ground Truth)
 
-- [2011-12](https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&Cycle=2011-2012)
-- [2013-14](https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&Cycle=2013-2014)
-  - Glycohemoglobin (for Ground Truth)
+- [2011-12](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/GHB_G.xpt)
+- [2013-14](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/GHB_H.xpt)
 
-## Physio NHANES Step Count Data
+## Physio NHANES Step Count Data (2011-2014)
 
-- [2011-2014](https://physionet.org/content/minute-level-step-count-nhanes/1.0.1/csv/#files-panel)
-  - Activity Counts
-  - MIMS (Measurement of Activity)
+- [Activity Counts](https://physionet.org/content/minute-level-step-count-nhanes/1.0.1/csv/nhanes_1440_AC.csv.xz)
+- [MIMS](https://physionet.org/content/minute-level-step-count-nhanes/1.0.1/csv/nhanes_1440_PAXMTSM.csv.xz)
