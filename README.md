@@ -1,9 +1,17 @@
-# Data Sources
+# Diapredict
+
+## Running Our Model
+
+Our model (and some optional scripts used to help optimize our models) are all included in `diapredict_ensemble.ipynb`. This model will not run properly without the correct data (discussed below) and dependencies. Ensure the jupyter notebook is run in a python kernel containing the dependencies outlined in `requirements.txt` (to install dependencies, run `pip install -r requirements.txt`). Once everything is properly installed, simply running all cells (optionally skipping the cells marked as "Optional") will run our model and print our results.
+
+## The Data
 
 Our data comes entirely from different subsets of the CDC's National Health and Nutrition Examination Survey (NHANES).
-To run our model successfully, the file paths and names of the datasets inside of the `data` folder must be properly updated.
-A google drive folder containing all relevant data in the correct configuration can be found [here](https://drive.google.com/drive/folders/1aH5_MltxgZlqqVENs3FR19ifpsSzk_pv?usp=sharing).
-Alternatively, hyperlinks leading to each distinct dataset used in our project are listed below.
+To run our model successfully, the file paths and names of the datasets inside of the `data` folder must be properly updated. Below is an image of an example file structure of how all datasets should be structured.
+
+![Example Dataset Structure](data-structure-image.png)
+
+A google drive folder containing all relevant data in the correct configuration can be found [here](https://drive.google.com/drive/folders/1aH5_MltxgZlqqVENs3FR19ifpsSzk_pv?usp=sharing). Alternatively, hyperlinks leading to each distinct dataset used in our project are listed below.
 
 ## NHANES Demographics
 
